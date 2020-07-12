@@ -27,4 +27,4 @@ output: html_document
 
 - #### Dataset Repository: https://github.com/imdevskp/covid-19-india-data
 
-- #### Presentation: https://akshatt.github.io/COVID19-case-reports-shiny-application/
+- #### Presentation: https://rpubs.com/akshatt/k9
