@@ -1,0 +1,30 @@
+---
+title: "Documentation"
+author: "Akshat Jain"
+output: html_document
+---
+# About
+
+- ### This application lets a user know the overview of COVID19 cases in India.
+
+- ### It is written in Shiny which is a web application framework for R.
+
+- ### It leverages the **googleVis** library for displaying the map.
+
+- ### It is hosted on Rstudio's shiny server in the cloud (Shinyapps.io)
+
+# Using the App
+
+- ### Pick the type of cases you want to know about
+
+- ### Hover over a state, to know the details. 
+
+- ### Higher intensity of color would mean higher number of cases of the particular type.
+
+## References
+
+- #### Github Repository: https://github.com/Akshatt/COVID19-case-reports-shiny-application
+
+- #### Dataset Repository: https://github.com/imdevskp/covid-19-india-data
+
+- #### Presentation: https://akshatt.github.io/COVID19-case-reports-shiny-application/
