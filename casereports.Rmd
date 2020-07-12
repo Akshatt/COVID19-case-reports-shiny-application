@@ -1,0 +1,49 @@
+---
+title: "Case reports for COVID19 in India"
+author: "Akshat Jain"
+date: "12/07/2020"
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+library(googleVis)
+states <- read.csv("./state_level_latest.csv", header = T)[1:6]
+states <- states[-1, ]
+```
+
+## Application Overview
+
+- This application will enable you to check the number of cases across India statewise.
+- The values are updated daily.
+- You can select the type of cases you wish to check from the dropdown menu.
+- The output is an interacticve map of India with distinct colored states corresponding to the number of cases.
+
+
+## Dataset
+
+The dataset used is extracted from a [github repository](https://github.com/imdevskp/covid-19-india-data). The data consists of a variety of fields but we only need the first 6 for our application. 
+
+```{r data, echo=TRUE}
+str(states)
+```
+
+## Plot
+
+`googleVis` library has been used in this application. This library provides a lot of features to interact with our map and it is perfect for our application. 
+
+```{r plot, echo=T}
+g <- gvisGeoChart(data, "State", "Confirmed", 
+                  options=list(region="IN", displayMode="regions", 
+                              resolution="provinces"))
+```
+![](./plot.png)
+
+
+
+## Links
+
+- The shiny app is hosted [here](https://akshatt.shinyapps.io/covidcases/).
+
+- The source code is available [here](https://github.com/Akshatt/COVID19-case-reports-shiny-application).
+
