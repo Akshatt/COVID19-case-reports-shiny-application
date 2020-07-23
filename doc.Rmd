@@ -23,8 +23,8 @@ output: html_document
 
 ## References
 
-- #### Github Repository: https://github.com/Akshatt/COVID19-case-reports-shiny-application
+- #### [Github Link](https://github.com/Akshatt/COVID19-case-reports-shiny-application)
 
-- #### Dataset Repository: https://github.com/imdevskp/covid-19-india-data
+- #### [Dataset Repository](https://github.com/covid19india/api)
 
-- #### Presentation: https://rpubs.com/akshatt/k9
+- #### [Presentation](https://rpubs.com/akshatt/k9)
